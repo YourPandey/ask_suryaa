@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Surya Tripathi 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- Audio Files -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="cracker-sound">
+        <source src="crackers.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Welcome Screen -->
+    <div id="intro-screen" class="glass-card active">
+        <h1>I have a question for you... 🙈</h1>
+        <p>Turn your volume up! 🔊</p>
+        <button class="btn yes" onclick="startExperience()">Open ❤️</button>
+    </div>
+
+    <!-- Page 1: "Yes" runs away -->
+    <div id="page1" class="glass-card hidden">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGI3ZWIwYjM0MzE1NjQ1ZjYwMGIzZjJkNjU5ZTk1ZGEwYjJlNjE5ZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/K1tgb1IUeBOgw/giphy.gif" alt="Cute Cat" class="floating">
+        <h1>Hey Surya Tripathi, will you be my best friend? 😌</h1>
+        <p>- Pandey ji is asking...</p>
+        <div class="button-container">
+            <button class="btn yes runaway-btn">Yes</button>
+            <button class="btn no" onclick="showPage('page2')">No</button>
+        </div>
+    </div>
+
+    <!-- Page 2: "Yes" runs away again -->
+    <div id="page2" class="glass-card hidden">
+        <img src="https://media.giphy.com/media/BEob5qwFkSJ7G/giphy.gif" alt="Crying" class="floating">
+        <h1>Please think again! 🥺</h1>
+        <p>Itni jaldi na mat bolo Surya...</p>
+        <div class="button-container">
+            <button class="btn yes runaway-btn">Yes</button>
+            <button class="btn no" onclick="showPage('page3')">No</button>
+        </div>
+    </div>
+
+    <!-- Page 3: "No" runs away -->
+    <div id="page3" class="glass-card hidden">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGI3ZWIwYjM0MzE1NjQ1ZjYwMGIzZjJkNjU5ZTk1ZGEwYjJlNjE5ZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/MDJ9IbxxvDUQM/giphy.gif" alt="Pleading" class="floating">
+        <h1>Ek aur baar Soch lo! 😭</h1>
+        <p>Pandey ji request kar rahe hain na...</p>
+        <div class="button-container">
+            <button class="btn yes" onclick="showPage('yes-page')">Yes</button>
+            <button class="btn no runaway-btn">No</button>
+        </div>
+    </div>
+
+    <!-- Final Page: YES -->
+    <div id="yes-page" class="glass-card hidden">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDFuZnF4Y2V5cThmZXFwZWN4YjV4ZWV4cGFxNnF4Z3V4ZXFwZWN4YjV4ZWV4cGFxNnF4Z3V4ZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/MDJ9IbxxvDUQM/giphy.gif" alt="Happy Hug" class="floating" style="content: url('https://media.giphy.com/media/VbEC9WchxkiWTL5PFo/giphy.gif');">
+        <h1>I knew it! Besties forever! 🎉💖</h1>
+        <p>Surya Tripathi & Pandey Ji 😌</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
